@@ -5,15 +5,15 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
+.logoo {
+  height: 10em;
   padding: 1.5em;
   will-change: filter;
 }
-.logo:hover {
+.logoo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-.logo.react:hover {
+.logoo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
@@ -32,7 +32,7 @@
   }
 }
 
-.card {
+.cardd {
   padding: 2em;
 }
 
