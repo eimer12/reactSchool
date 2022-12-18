@@ -1,33 +1,25 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
 
 function App() {
 	const [count, setCount] = useState(0)
 
+	function restar() {
+		if (count <= 0) return
+		setCount(count => count - 1)
+	}
+	function sumar() {
+		setCount(count => count + 1)
+	}
+
 	return (
-	<div className="App">
-			<div>
-				<a href="https://vitejs.dev" target="_blank">
-					<img src="/vite.svg" className="logoo" alt="Vite logo" />
-				</a>
-				<a href="https://reactjs.org" target="_blank">
-					<img src={reactLogo} className="logoo react" alt="React logo" />
-				</a>
-			</div>
-			<h1 className="mt-5">Prueba de React Perros Mochos</h1>
-			<div className="cardd">
+		<div className="App">
+			<h1 className="mt-5">Prueba de React</h1>
+			<div className="border">
 				<h3>{count}</h3>
 				<div>
-					<button onClick={() => setCount(count => count + 1)}>Sumar</button>
-					<button
-						onClick={() => {
-							if (count <= 0) return
-							setCount(count => count - 1)
-						}}
-					>
-						Restar
-					</button>
+					<button onClick={sumar}>Sumar</button>
+					<button onClick={restar}> Restar </button>
 				</div>
 			</div>
 		</div>
